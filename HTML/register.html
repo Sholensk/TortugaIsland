@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="../CSS/register.css">
   </head>
   <body>
     <header></header>
@@ -16,19 +16,20 @@
       <section class="row">
         <div class="login col-lg-6 col-md-6 col-sm-12">
           <div class="container-fluid">
-            <img src="./IMG/Toruga.png" alt="Tortuga">
+            <img src="../IMG/Toruga.png" alt="Tortuga">
             <h1>Tortuga Island</h1>
             <form>
               <div class="user-pass">
                 <input type="text" placeholder="Nombre de usuario" name="Uname" required>
+                <input type="text" placeholder="Nombre" name="Nombre" required>
+                <input type="text" placeholder="Apellido" name="Apellido" required>
                 <input type="text" placeholder="Contraseña" name="Password" required>
+                <input type="text" placeholder="Confirmar Contraseña" name="ConfirmPassword" required>
               </div>
               <div class="buttons">
-                <input type="checkbox"><a>Recordarme</a>
-                <span id="oContra"><a href="./HTML/Register.html">Olvide mi contraseña</a></span>
-                <button type="submit">Iniciar sesión</button>
+                <button type="submit">Crear Cuenta</button>
               </div>
-              <span id="newUser"><a href="./HTML/Register.html">Crear Cuenta</a></span>
+              <span id="newUser"><a href="../index.html">Iniciar Sesión</a></span>
             </form>
           </div>
         </div>

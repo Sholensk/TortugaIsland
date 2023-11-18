@@ -1,9 +1,70 @@
-.btn-google img{
-    width: 2.3rem;
-    height: auto;
+body .login{
+    background-color: whitesmoke;
 }
 
-.btn-facebook img{
-    width: 1.8rem;
+body .imagen{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/024/714/785/large_2x/glowing-medusa-tentacles-swim-in-dark-waters-generated-by-ai-free-photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-fluid{
+    margin: 10% auto;
+}
+
+img{
+    width: 220px;
     height: auto;
+    margin: auto 38%;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 32px;
+    color: #EB6049;
+    font-family: 'Satisfy', cursive;
+    font-size: 84px;
+}
+
+form{
+    padding: 50px;
+    margin: auto auto;
+    max-width: 640px;
+    max-height: 800px;
+}
+
+
+
+form .user-pass input{
+    width: 498px;
+    height: 69px;
+    border-radius: 45px;
+    border: 0px;
+    margin-bottom: 35px;
+    font-family: 'Indie Flower', cursive;
+}
+
+form .buttons input{
+    text-align: center;
+    margin-left: 220px;
+}
+
+form .buttons button{
+    width: 388px;
+    height: 60px;
+    border-radius: 41px;
+    border: 0px;
+    background-color: #45B594;
+    margin: 48px 45px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 24px;
+}
+
+form ::placeholder{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    padding-left: 18px;
+    text-align: left;
 }

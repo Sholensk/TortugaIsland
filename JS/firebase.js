@@ -1,56 +1,17 @@
-import { app } from "./mods/firebase-config.js";
-import { firebaseCRUD } from "./mods/firebase-db.js";
-import { authEmail } from "./mods/firebase-auth-email.js";
+import { app } from "./mods/firebase-config.js"
 
-firebaseCRUD(app);
-authEmail(app);
+import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js"
+import { auth } from "./mods/firebase-config.js"
 
+import "./mods/signUp.js"
+import './mods/signIn.js'
+import './mods/google-Log.js'
+import './mods/logout.js'
+import { loginCheck } from "./mods/loginCheck.js"
 
-/*
-import { authGitHub } from "./modulos/firebase-auth-github.js";
-import { authGoogle } from "./modulos/firebase-auth-google.js";
-import { firebaseStorage } from "./modulos/firebase-storage.js";
-
-//console.log(app);
-//firebaseCRUD(app);
-authEmail(app);
-/*
-authGitHub(app);
-authGoogle(app);
-firebaseStorage(app);
-
-
-
-/*
-import { app } from "./mods/firebase-config.js";
-import { database } from "./mods/firebase-config.js"
-
-firebase.database.ref("registro");
-
-document.getElementById("registro").addEventListener("submit", submitForm);
-
-function submitForm(e) {
-  e.preventDefault();
-  
-  usuario = getElementVal("usuario")
-  email = getElementVal("email");
-  password = getElementVal("password");
-  
-  saveUsuario(usuario, email,password)
-  console.log("registrado", usuario, email, contraseña);
-} 
-
-const saveUsuario = (usuario, email, password) => {
-  newUser = registro.push();
-
-  usuario.set({
-    nombre: usuario,
-    email: email,
-    password: password,
-  })
-}
-
-const getElementVal = (id) => {
-  return document.getElementById(id).value;
-}
-*/
+onAuthStateChanged(auth, async (idUsuario) => {
+    loginCheck(idUsuario)
+    //if (idUsuario) { }
+   // else  {
+    //    loginCheck(idUsuario) }
+})

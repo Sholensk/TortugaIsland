@@ -1,0 +1,3 @@
+class logged-out ----  identificador para saber que poner cuando no este la sesion abierta
+
+class logged-in ---- identidicadr para saber que poner cuando este la sesion abierta

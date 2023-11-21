@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/register.css">
+    <script src="./JS/firebase.js" type="module"></script>
   </head>
   <body>
     <header></header>
@@ -20,16 +21,20 @@
             <h1>Tortuga Island</h1>
             <form>
               <div class="user-pass" id="">
-                <input type="text" placeholder="Nombre de usuario" name="Uname" required>
-                <input type="text" placeholder="Correo Electronico" name="Correo" required>
-                <input type="text" placeholder="Contraseña" name="Password" required>
-                <input type="text" placeholder="Confirmar Contraseña" name="ConfirmPassword" required>
+                <input type="email" id="registro-email" placeholder="Correo Electronico" name="Correo" required>
+                <input type="password" id="registro-password" placeholder="Contraseña" name="Password" required>
+                <!--<input type="text" placeholder="Confirmar Contraseña" name="ConfirmPassword" required>-->
+              </div>
+              <div>
+                <button id="googleLog">Ingresa con <i>Google</i></button>
+                <article id="app-auth-google"></article>
               </div>
               <div class="buttons">
-                <button type="submit">Crear Cuenta</button>
+                <button type="submit" value="Crear Cuenta">Crear Cuenta</button>
               </div>
               <span id="newUser"><a href="../index.html">Iniciar Sesión</a></span>
             </form>
+            <article id="app-auth-email"></article>
           </div>
         </div>
         <div class="imagen col-lg-6 col-md-6"><div>

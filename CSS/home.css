@@ -1,0 +1,22 @@
+.container{
+    margin: 5% 1%;
+    border: 2px solid black;
+}
+
+.container img{
+    max-width: 320px;
+    max-height: auto;
+}
+
+button img{
+    max-width: 40px;
+}
+
+.container span{
+    margin-left: 1%;
+}
+
+h1{
+    font-family: 'Indie Flower', cursive;
+    margin: 5px 10px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicaciones</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .profile-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .profile-image {
+            border-radius: 50%;
+            max-width: 40px;
+            margin-right: 10px;
+        }
+
+        .profile-name {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .delete-button {
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .bottom-section {
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .bottom-image {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .bottom-description {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="profile-info">
+            <img src="ruta_de_la_imagen.jpg" alt="Imagen de perfil" class="profile-image">
+            <div class="profile-name">Nombre de la Persona</div>
+        </div>
+        <button class="delete-button">Borrar</button>
+    </div>
+
+    <div class="bottom-section">
+        <img src="ruta_de_la_imagen_abajo.jpg" alt="Imagen de la parte inferior" class="bottom-image">
+        <p class="bottom-description">Descripción en texto para editar.</p>
+    </div>
+
+</body>
+</html>

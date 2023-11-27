@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+        }
+
+        .profile-section {
+            flex: 1;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .profile-image {
+            border-radius: 50%;
+            max-width: 150px;
+        }
+
+        .profile-name {
+            margin: 10px 0;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .home-button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .profile-description {
+            font-size: 1em;
+        }
+
+        .dashboard-section {
+            flex: 2;
+            padding: 20px;
+        }
+
+        .dashboard-header {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .notification-bell {
+            max-width: 30px;
+            margin-right: 10px;
+        }
+
+        .message-bubble {
+            max-width: 30px;
+            margin-right: 10px;
+        }
+
+        .search-bar {
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .post {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .post-image {
+            max-width: 100px;
+            margin-right: 20px;
+        }
+
+        .post-description {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-section">
+        <img src="ruta_de_la_imagen.jpg" alt="Imagen de perfil" class="profile-image">
+        <div class="profile-name">Nombre de la Persona</div>
+        <a href="#" class="home-button">Inicio</a>
+        <p class="profile-description">Descripción de la persona.</p>
+    </div>
+
+    <div class="dashboard-section">
+        <img src="ruta_de_campana.png" alt="Campana de Notificaciones" class="notification-bell">
+        <img src="ruta_de_burbuja.png" alt="Burbuja de Mensajes" class="message-bubble">
+        <input type="text" placeholder="Buscar" class="search-bar">
+
+        <!-- Publicación 1 -->
+        <div class="post">
+            <img src="ruta_de_publicacion_1.png" alt="Publicación 1" class="post-image">
+            <div class="post-description">
+                Descripción de la publicación 1.
+            </div>
+        </div>
+
+        <!-- Publicación 2 -->
+        <div class="post">
+            <img src="ruta_de_publicacion_2.png" alt="Publicación 2" class="post-image">
+            <div class="post-description">
+                Descripción de la publicación 2.
+            </div>
+        </div>
+
+        <!-- Puedes agregar más publicaciones según sea necesario -->
+
+    </div>
+
+</body>
+</html>

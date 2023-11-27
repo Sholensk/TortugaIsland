@@ -26,7 +26,7 @@ import {
   
         fileList.forEach((file) => {
           //console.log(file);
-          const filesRef = refStorage(storage, "files/" + file.name),
+          const filesRef = refStorage(storage, "img/" + file.name),
             uploadTask = uploadBytesResumable(filesRef, file);
   
           uploadTask.on(

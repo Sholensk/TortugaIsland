@@ -5,7 +5,7 @@
 }
 
 .logo img{
-    width: 180px;
+    width: 140px;
     height: auto;
 }
 
@@ -13,11 +13,11 @@
     margin-left: 10%;
     font-family: 'Satisfy', cursive;
     color: #EB6049;
-    font-size: 36px;
+    font-size: 24px;
 }
 
 .UserInterface img{
-    width: 180px;
+    width: 140px;
     height: auto;
     margin-left: 32%;
     margin-top: 10%;
@@ -28,12 +28,12 @@
     height: auto;
     margin-left: 32%;
     margin-top: 10%;
-    font-size: 32px;
+    font-size: 24px;
     font-family: 'Indie Flower', cursive;
 }
 
 .logged-in button{
-    margin-top: 75%;
+    margin-top: 40%;
     margin-left: 40%;
     width: 56px;
     height: auto;

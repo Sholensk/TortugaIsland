@@ -3,13 +3,13 @@ import { getAuth } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-auth
 import { getDatabase } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-database.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDCDzxOsclXxoygFhR55aXiCJMCkqWvx2s",
-  authDomain: "tortuga-island2.firebaseapp.com",
-  databaseURL: "https://tortuga-island2-default-rtdb.firebaseio.com",
-  projectId: "tortuga-island2",
-  storageBucket: "tortuga-island2.appspot.com",
-  messagingSenderId: "406756141279",
-  appId: "1:406756141279:web:c13acd369d659a32ef216a"
+  apiKey: "AIzaSyBMd2gLle-fnYDlBkw3qagrkGHfrCvujec",
+    authDomain: "tortuga-island-afe8f.firebaseapp.com",
+    projectId: "tortuga-island-afe8f",
+    storageBucket: "tortuga-island-afe8f.appspot.com",
+    messagingSenderId: "554206526935",
+    appId: "1:554206526935:web:e7e789e490159ff6a3df92",
+    measurementId: "G-86Q8CS1ZNV"
 };
 
 // Initialize Firebase

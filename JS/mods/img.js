@@ -14,14 +14,14 @@ import {
       $progressAdvance = d.getElementById("progress-advance"),
       $appStorage = d.getElementById("app-storage");
   
-    //console.log(docsRef);
+    console.log(docsRef);
   
     $appStorage.innerHTML = "";
   
     d.addEventListener("change", (e) => {
-      if (e.target.matches("#uploud_btn")) {
+      if (e.target.matches("#Subir")) {
         alert("Subiendo archivo(s)...");
-        //console.log(e.target.files);
+        console.log(e.target.files);
         let fileList = Array.from(e.target.files);
   
         fileList.forEach((file) => {
@@ -32,12 +32,12 @@ import {
           uploadTask.on(
             "state_changed",
             (snapshot) => {
-              //console.log(snapshot);
+              console.log(snapshot);
               let progress = Math.floor(
                 (snapshot.bytesTransferred / snapshot.totalBytes) * 100
               );
   
-              //console.log(progress);
+              console.log(progress);
               $progressBar.value = progress;
               $progressAdvance.innerHTML = `${progress}%`;
             },

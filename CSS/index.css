@@ -34,9 +34,11 @@ form{
     max-height: 800px;
 }
 
+a {
+    font-family: 'Indie Flower', cursive;
+}
 
-
-form .user-pass input{
+form .logged-out input{
     width: 498px;
     height: 69px;
     border-radius: 45px;

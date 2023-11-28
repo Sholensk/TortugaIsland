@@ -19,14 +19,17 @@
           <div class="container-fluid">
             <img src="../IMG/Toruga.png" alt="Tortuga">
             <h1>Tortuga Island</h1>
-            <form>
-              <div class="user-pass" id="">
-                <input type="email" id="registro-email" placeholder="Correo Electronico" name="Correo" required>
-                <input type="password" id="registro-password" placeholder="Contraseña" name="Password" required>
+            <form id="registro" class="logged-out">
+              <div>
+                <input type="email" id="registro-email" placeholder="email"/>
+                <input type="password" id="registro-password" placeholder="contraseña"/>
                 <!--<input type="text" placeholder="Confirmar Contraseña" name="ConfirmPassword" required>-->
               </div>
               <div>
-                <button id="googleLog">Ingresa con <i>Google</i></button>
+                <section class="full-screen">
+                  <button id="googleLog"><img src="../IMG/Google.png" alt="Google" style="width: 10%;"></button>
+                  <article id="app-auth-google"></article>
+                </section>
                 <article id="app-auth-google"></article>
               </div>
               <div class="buttons">
